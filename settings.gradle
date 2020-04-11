@@ -1,0 +1,8 @@
+rootProject.name='CustomRouter'
+include ':app'
+include ':base'
+include ':login'
+include ':mine'
+include ':Annotation'
+include ':AnnotationProcessor'
+include ':routerabout'

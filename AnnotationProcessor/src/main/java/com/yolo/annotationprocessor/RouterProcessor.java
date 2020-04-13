@@ -118,6 +118,7 @@ public class RouterProcessor extends AbstractProcessor {
             int i = 0;
             for (RouterBean bean : entry.getValue()) {
                 String beanName = "bean" + i;
+                methodBuilder.addComment(bean.getPath().replace("/", ""));
                 methodBuilder.addStatement("$T " + beanName + " = new $T()", ClassName.get(RouterBean.class), ClassName.get(RouterBean.class));
                 methodBuilder.addStatement(beanName + ".setPath($S)", bean.getPath());
                 methodBuilder.addStatement(beanName + ".setModule($S)", bean.getModule());

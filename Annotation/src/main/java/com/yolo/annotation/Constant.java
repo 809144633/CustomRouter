@@ -13,7 +13,6 @@ public class Constant {
     public static final String MODULE_PARAMETER_NAME = "moduleMap";
     public static final String ROOT_METHOD_NAME = "loadMap";
     public static final String ROOT_PARAMETER_NAME = "rootMap";
-    public static final String CONNECT_SUCCESS = "connect success";
     public static final String ACTIVITY = "android.app.Activity";
     public static final String PACKAGE_NAME = "com.yolo.router.processor";
     /**

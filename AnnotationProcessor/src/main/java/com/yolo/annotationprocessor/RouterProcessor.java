@@ -68,11 +68,9 @@ public class RouterProcessor extends AbstractProcessor {
         filer = environment.getFiler();
         typeUtils = environment.getTypeUtils();
         if (!options.isEmpty()) {
-            String successFlag = Constant.CONNECT_SUCCESS + ":" + options.get(Constant.MODULE_NAME);
+            String successFlag = "connect success:" + options.get(Constant.MODULE_NAME);
             messager.printMessage(Diagnostic.Kind.NOTE, successFlag);
         }
-
-
         activity = elementUtils.getTypeElement(Constant.ACTIVITY);
     }
 
